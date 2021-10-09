@@ -2,7 +2,10 @@
 
   <div id=" App">
     <headerPage />
-    <HomePage />
+    <BaseLayout>
+      <HomePage />
+    </BaseLayout>
+
     <FooterPage />
   </div>
 
@@ -12,12 +15,14 @@
 import headerPage  from "./components/Page/Homepage/Header.vue"
 import FooterPage  from "./components/Page/Homepage/Footer.vue"
 import HomePage  from "./components/Page/Homepage/Homepage.vue"
+import BaseLayout from "./components/Page/Homepage/BaseLayout";
 export default {
   name: 'App',
   components: {
     headerPage,
     FooterPage,
-    HomePage
+    HomePage,
+    BaseLayout
   }
 }
 </script>
