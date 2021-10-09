@@ -1,15 +1,24 @@
 <template>
-<div class="header"> joe le rigolo</div>
+  <div class="header">
+    <div > Home page </div>
+  </div>
 </template>
 
 <script>
 export default {
-  name: "home-page"
+  name: "headerPage",
 }
 </script>
 
 <style scoped>
 .header{
-  color: red;
+  position:fixed;
+  width : 100%;
+  top:0;
+  height: 1.5em;
+  background-color: lightskyblue;
+  display:flex ;
+  justify-content: center;
 }
+
 </style>
