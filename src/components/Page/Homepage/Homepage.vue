@@ -1,10 +1,19 @@
 <template>
-<div class="home"> <p>Bienvenue sur notre site !</p></div>
+<div class="home">
+  <p>Bienvenue sur notre site !</p>
+  <BaseButton>Button</BaseButton>
+</div>
 </template>
 
 <script>
+
+import BaseButton from "../../Button/BaseButton";
 export default {
-  name: "Footer.vue"
+
+  name: "HomePage",
+  components :{
+    BaseButton
+  }
 }
 </script>
 
